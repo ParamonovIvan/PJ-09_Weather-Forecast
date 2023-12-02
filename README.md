@@ -123,3 +123,4 @@
 ### Результат работы:
 #### Страница виджета с прогнозом погоды
 
+<img width="445" alt="weather" src="https://github.com/ParamonovIvan/Weather-Forecast_PG-09/assets/131868856/b39be946-6743-47b8-8e44-6b5b4fe4f2da">
