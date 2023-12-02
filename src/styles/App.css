@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #06283d;
+}
+
+.container {
+  width: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container__weather-box {
+  background: #fff;
+  padding: 28px 32px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.4s easy;
+}
+
+.location-box__location {
+  color: #06283d;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+  
+.location-box__date, .temp-box__date {
+  color: #06283d;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-box__buttons-widget {
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+} 
+
+.buttons-widget {
+  cursor: pointer;
+  width: auto;
+  height: 50px;
+  color: #06283d;
+  padding: 10px 20px;
+  background: #dff6ff;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.4s easy;
+}
+
+.buttons-widget:hover {
+  background: #0b466b;
+}
+
+.inactive {
+  display: none;
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  transition: 0.4s easy;
+  background-color: #fff;
+  border-radius: 18px;
+}
+
+.not-found__img {
+  background-image: url('../images/404.gif');
+  background-size: cover;
+  height: 400px;
+  border-radius: 18px;
+  background-position: center;
+}
+
+.not-found p {
+  color: #06283d;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .buttons-widget {
+    font-size: 20px;
+  }
+
+  .container__weather-box {
+    padding: 14px 1px;
+  }
+
+  .location-box__location {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  
+  .location-box__date, .temp-box__date {
+  font-size: 9px;
+  font-weight: 150;
+  }
+
+  .buttons-widget {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .not-found {
+    margin-top: 10px;
+  }
+
+  .not-found__img {
+    height: 350px;
+  }
+
+  .not-found p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 6px;
+    padding-bottom: 10px;
+  }  
+}

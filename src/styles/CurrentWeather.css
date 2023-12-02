@@ -1,0 +1,138 @@
+.temp-box__temperature {
+  position: relative;
+  color: #06283d;
+  font-size: 65px;
+  font-weight: 800;
+  margin-left: -16px; 
+}
+
+.temp-box__temperature span {
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.temp-box__description {
+  color: #06283d;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.weather-box .date {
+  color: #06283d;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.weather-box__details-box {
+  width: 100%;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.details-box__humidity, 
+.details-box__wind, 
+.details-box__pressure {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  height: 70px;
+}
+
+.details-box__sunrise,
+.details-box__sunset {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 70px;
+}
+
+.details-box__humidity, .details-box__sunrise {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.details-box__pressure {
+  justify-content: center;
+}
+
+.details-box__wind, .details-box__sunset {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.details-box__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-box__text span {
+  color: #06283d;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.details-box__text p {
+  color: #06283d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+
+  .temp-box__temperature {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: -8px; 
+  }
+  
+  .temp-box__temperature span {
+    margin-left: 4px;
+    font-size: 0.75rem;
+  }
+  
+  .temp-box__description {
+    font-size: 9px;
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+  
+  .weather-box .date {
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 15px;
+  }
+  
+  .details-box__humidity, 
+  .details-box__wind, 
+  .details-box__pressure {
+    height: 40px;
+  }
+  
+  .details-box__sunrise,
+  .details-box__sunset {
+    height: 40px;
+  }
+  
+  .details-box__humidity, .details-box__sunrise {
+    padding-left: 10px;
+  }
+  
+  .details-box__wind, .details-box__sunset {
+    padding-right: 10px;
+  }
+
+  .details-box__text span {
+    font-size: 12px;
+    font-weight: 200;
+  }
+  
+  .details-box__text p {
+    font-size: 10px;
+    font-weight: 200;
+  }
+}

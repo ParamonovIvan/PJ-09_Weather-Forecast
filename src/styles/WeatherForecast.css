@@ -1,0 +1,33 @@
+.forecast-box {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1500px) {
+  .forecast-box {
+    width: 525px;
+  }
+
+  .forecast-box__cards {
+    display: grid;
+    place-items: center;
+    width: 525px;
+    background: #fff;
+    padding: 28px 32px;
+    border-radius: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .forecast-box {
+    width: 350px;
+  }
+
+  .forecast-box__cards {
+    width: 330px;
+    padding: 14px 16px;
+  }
+}
